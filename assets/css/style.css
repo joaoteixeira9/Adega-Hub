@@ -1,0 +1,210 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-preto: #333;
+    --cor-branco: #f4f6f6;
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: var(--cor-branco);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-navegacao .logo {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px;
+}
+.menu a:hover{
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-weight: 500;
+    background-color: #333;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.menu-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    border: 2px solid var(--cor-branco);
+}
+
+.menu-icons .selecionado{
+    background-color: #333;
+    color: var(--cor-branco);
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.menu-icons a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.content{
+    padding: 1rem;
+}
+
+.content h1{
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+ol.bebidas{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+ol.bebidas:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+ol.bebidas li {
+    padding: 1rem; 
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    transition: .35s;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    height: 120px;
+    width: 100%; 
+    box-sizing: border-box; 
+    max-width: 350px; 
+    margin: 0 auto 1rem; 
+}
+
+ol.bebidas li img {
+    max-width: 80px;
+}
+
+.preto {
+    background-color: #1b1b1b;
+}
+
+.dourado {
+    background-color: #febd14;
+}
+
+.vermelho {
+    background-color: #a40022;
+}
+
+.verde {
+    background-color: #165a27;
+}
+
+.azul {
+    background-color: #0e1fa0;
+}
+
+footer{
+    background-color: var(--cor-branco);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: var(--cor-preto);
+}
+
+footer h6{
+    font-size: small;
+}
+
+.infoAdega{
+    display: flex;
+    gap: 15px;
+}
+
+.infoAdega img{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.contatos{
+    margin-top: 14px;
+}
+
+.outros {
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.outros h6 {
+    color: #333;
+}
+
+.formaPag img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.formaPag img:hover {
+    transform: scale(1.1);
+}
+
+.redesSociais i{
+    font-size:x-large;
+    margin: 0 10px 10px 0;
+    color: var(--cor-preto);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redesSociais i.bi-whatsapp:hover{
+    color: #25D366;
+}
+.redesSociais i.bi-facebook:hover {
+    color: #007bff;
+}
+.redesSociais i.bi-tiktok:hover {
+    color: #000;
+}
+.redesSociais i.bi-instagram:hover {
+    background: linear-gradient(45deg, #9b4dca, #ff5e14);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.redesSociais i.bi-threads:hover {
+    color: #000;
+}
+.redesSociais i.bi-twitter-x:hover {
+    color: #000;
+}
