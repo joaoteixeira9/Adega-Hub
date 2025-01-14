@@ -103,7 +103,8 @@ ol.bebidas li {
     width: 100%; 
     box-sizing: border-box; 
     max-width: 350px; 
-    margin: 0 auto 1rem; 
+    margin: 0 auto 1rem;
+    text-transform: capitalize;
 }
 
 ol.bebidas li img {
@@ -133,7 +134,6 @@ ol.bebidas li img {
 footer{
     background-color: var(--cor-branco);
     width: 100%;
-    position: fixed;
     bottom: 0;
     left: 0;
     color: var(--cor-preto);
@@ -207,4 +207,79 @@ footer h6{
 }
 .redesSociais i.bi-twitter-x:hover {
     color: #000;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    gap: 200px;
+}
+
+.cardCombos, .cardQuemSomos, .cardProdutos {
+    width: 300px;
+    height: 530px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.cardCombos{
+    background-image: url(../../img/combos.jpg);
+}
+
+.cardQuemSomos{
+    background-image: url(../../img/fachada-adega.jpg);
+}
+
+.cardProdutos{
+    background-image: url(../../img/jack\ daniels\ No7.png);
+    background-color: #000;
+}
+
+.cardCombos p, .cardQuemSomos p, .cardProdutos p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    margin-top: 30.5rem;
+}
+
+.cardCombos, .cardQuemSomos, .cardProdutos {
+    width: 300px;
+    height: 530px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: opacity 0.5s ease; /* Adicionando a transição */
+}
+
+.cardCombos {
+    background-image: url(../../img/combos.jpg);
+}
+
+.cardQuemSomos {
+    background-image: url(../../img/fachada-adega.jpg);
+}
+
+.cardProdutos {
+    background-image: url(../../img/jack\ daniels\ No7.png);
+    background-color: #000;
+}
+
+.cardCombos p, .cardQuemSomos p, .cardProdutos p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    margin-top: 30.5rem;
 }
