@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cardQuemSomos = document.getElementById('cardQuemSomos');
     const cardProdutos = document.getElementById('cardProdutos');
     const principal = document.getElementById('principal');
+    const video = document.getElementById('background-video');
 
     // Função de hover para cardCombos
     cardCombos.addEventListener('mouseenter', function() {
@@ -41,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
     cardProdutos.addEventListener('mouseenter', function() {
         cardProdutos.classList.add('cardProdutosHovered');
         principal.classList.add('principalProdutos');
+        video.src = './img/produtos.mp4';
+        video.play();
         // Reduz a opacidade dos outros cards
         cardCombos.style.opacity = '0';
         cardQuemSomos.style.opacity = '0';
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardProdutos.addEventListener('mouseleave', function() {
         cardProdutos.classList.remove('cardProdutosHovered');
         principal.classList.remove('principalProdutos');
+        video.src = '';
         // Restaura a opacidade dos outros cards
         cardCombos.style.opacity = '1';
         cardQuemSomos.style.opacity = '1';

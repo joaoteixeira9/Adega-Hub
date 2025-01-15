@@ -215,6 +215,24 @@ footer h6{
     text-align: center;
     padding: 35px;
     gap: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.principal a {
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.s-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 530px;
 }
 
 .cardCombos, .cardQuemSomos, .cardProdutos {
@@ -264,22 +282,100 @@ footer h6{
 }
 
 .cardCombos {
-    background-image: url(../../img/combos.jpg);
+    background-image: url('../../img/combos.jpg');
+    position: relative;
+}
+
+.cardCombos p {
+    transition: all 0.7s ease-in-out;
+    position: relative;
+}
+
+.cardCombos:hover{
+    background-image: none;
+    box-shadow: none;
+}
+
+.cardCombos:hover p{
+    transform: translateY(-35vh);
 }
 
 .cardQuemSomos {
     background-image: url(../../img/fachada-adega.jpg);
+    position: relative;
+}
+
+.cardQuemSomos p {
+    transition: all 0.7s ease;
+    position: relative;
+}
+
+.cardQuemSomos:hover{
+    background-image: none;
+    box-shadow: none;
+}
+
+.cardQuemSomos:hover p{
+    transform: translateY(-35vh);
 }
 
 .cardProdutos {
     background-image: url(../../img/jack\ daniels\ No7.png);
+    position: relative;
     background-color: #000;
 }
 
+.cardProdutos p {
+    transition: all 0.7s ease;
+    position: relative;
+}
+
+.cardProdutos:hover{
+    background-image: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.cardProdutos:hover p{
+    transform: translateY(-35vh);
+}
 .cardCombos p, .cardQuemSomos p, .cardProdutos p {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--cor-branco);
     margin-top: 30.5rem;
+}
+
+.principalCombo{
+    background-image: url('../../img/combos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.principalProdutos{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.principalQuemSomos{
+    background-image: url('../../img/fachada-adega.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
