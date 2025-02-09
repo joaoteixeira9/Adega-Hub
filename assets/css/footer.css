@@ -1,0 +1,82 @@
+@import url('./global.css');
+footer {
+    background-color: var(--cor-branco);
+    width: 100%;
+    color: var(--cor-preto);
+    height: 38vh;
+    bottom: 0;
+    left: 0;
+}
+
+footer h6 {
+    font-size: small;
+}
+
+.infoAdega {
+    display: flex;
+    gap: 15px;
+}
+
+.infoAdega img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.contatos {
+    margin-top: 14px;
+}
+
+.outros {
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.outros h6 {
+    color: var(--cor-preto);
+}
+
+.formaPag img {
+    width: 35px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.formaPag img:hover {
+    transform: scale(1.1);
+}
+
+.redesSociais i {
+    font-size: x-large;
+    color: var(--cor-preto);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redesSociais i.bi-whatsapp:hover {
+    color: #25D366;
+}
+
+.redesSociais i.bi-facebook:hover {
+    color: #007bff;
+}
+
+.redesSociais i.bi-tiktok:hover {
+    color: #000;
+}
+
+.redesSociais i.bi-instagram:hover {
+    background: linear-gradient(45deg, #9b4dca, #ff5e14);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.redesSociais i.bi-threads:hover {
+    color: #000;
+}
+
+.redesSociais i.bi-twitter-x:hover {
+    color: #000;
+}

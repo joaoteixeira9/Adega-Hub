@@ -1,6 +1,6 @@
-<footer>
+    <footer>
         <div class="infoAdega">
-            <img src="./img/fachada-adega.jpg" class="img-thumbnail img-fluid" alt="">
+            <img src="/Adega-Hub/img/fachada-adega.jpg" class="img-thumbnail img-fluid" alt="">
             <div class="contatos">
                 <h6>Rua das Amoras, nº 245, Bairro Jardim Encantado, Vila Nova, São Paulo, CEP 12345-678</h6>
                 <h6>(19) 98765-4321</h6>
@@ -13,12 +13,12 @@
         <div class="outros">
             <div class="formaPag">
                 <h6>Formas de pagamento</h6>
-                <img src="./img/mastercard.png" alt="">
-                <img src="./img/visa.png" alt="">
-                <img src="./img/elo.png" alt="">
-                <img src="./img/pix.png" alt="">
-                <img src="./img/dinners-club.png" alt="">
-                <img src="./img/hipercard.png" alt="">
+                <img src="/Adega-Hub/img/mastercard.png" alt="">
+                <img src="/Adega-Hub/img/visa.png" alt="">
+                <img src="/Adega-Hub/img/elo.png" alt="">
+                <img src="/Adega-Hub/img/pix.png" alt="">
+                <img src="/Adega-Hub/img/dinners-club.png" alt="">
+                <img src="/Adega-Hub/img/hipercard.png" alt="">
             </div>
             <div class="redesSociais">
                 <h6>Siga-nós</h6>
