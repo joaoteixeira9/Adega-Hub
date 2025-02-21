@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/Adega-Hub/assets/css/style.css">
     <script src="/Adega-Hub/assets/js/main.js"></script>
+    <script src="/Adega-Hub/assets/produtos/produtos.js"></script>
     <title>Adega Hub</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
             </a>
             <ul class="menu">
                 <li><a href="/Adega-Hub/">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="/Adega-Hub/assets/php/contato.php">Contato</a></li>
+                <li><a href="/Adega-Hub/assets/produtos">Produtos</a></li>
+                <li><a href="/Adega-Hub/assets/contato">Contato</a></li>
             </ul>
             <ul class="menu-icons">
                     <li><a href="#" class="selecionado"><i class="bi bi-search"></i></a></li>
                     <li><a href="#"><i class="bi bi-heart"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart3"></i></a></li>
+                    <li><a href="/Adega-Hub/assets/carrinho"><i class="bi bi-cart3"></i></a></li>
                     <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
                 </ul>
         </nav>

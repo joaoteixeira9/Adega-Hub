@@ -1,0 +1,54 @@
+@import url('../css/global.css');
+
+.produtos {
+    padding: auto;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.produtos .item {
+    background-color: var(--cor-branco);
+}
+
+ol.bebidasItem {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1rem;
+}
+
+ol.bebidasItem li {
+    padding: 1rem;
+    font-size: large;
+    justify-content: space-between;
+    transition: .35s;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 350px;
+    margin: 0 auto 1rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.itemImg {
+    max-width: 100px;
+    height: 100px;
+}

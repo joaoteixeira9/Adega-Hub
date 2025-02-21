@@ -1,0 +1,10 @@
+@import url('../css/global.css');
+
+.localizacao{
+    padding: auto;
+    margin-top: 5rem;
+}
+
+.enviarEmail{
+    background-color: var(--cor-branco);
+}

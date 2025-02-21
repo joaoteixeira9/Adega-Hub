@@ -1,11 +1,17 @@
 @import url('./global.css');
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 footer {
     background-color: var(--cor-branco);
     width: 100%;
     color: var(--cor-preto);
     height: 38vh;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
 }
 
 footer h6 {

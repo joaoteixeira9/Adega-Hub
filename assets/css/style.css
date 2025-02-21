@@ -3,12 +3,6 @@
 @import url('./layoutBebidas.css');
 @import url('./conteudoPrincipal.css');
 @import url('./footer.css');
-
-
-
-
-
-
-
-
-
+@import url('../contato/contato.css');
+@import url('../produtos/produtos.css');
+@import url('../carrinho/carrinho.css');
