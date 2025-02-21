@@ -16,3 +16,4 @@
         </div>
     </a>
 </section>
+<script src="/Adega-Hub/assets/js/main.js"></script>
