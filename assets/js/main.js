@@ -48,4 +48,3 @@ document.addEventListener("DOMContentLoaded", function() {
         cardQuemSomos.style.opacity = '1';
     });
 });
-

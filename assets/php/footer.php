@@ -31,5 +31,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/produtos.js"></script>
 </body>
 </html>

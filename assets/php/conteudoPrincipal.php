@@ -10,7 +10,7 @@
             <p>QUEM SOMOS ?</p>
         </div>
     </a>
-    <a href="#">
+    <a href="/Adega-Hub/assets/produtos">
         <div id="cardProdutos" class="s-card cardProdutos">
             <p>PRODUTOS</p>
         </div>

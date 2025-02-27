@@ -9,6 +9,19 @@
     <title>Adega Hub</title>
 </head>
 <body>
+    <?php
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        $numeroItensCarrinho = 0;
+
+        if (isset($_SESSION['carrinho'])) {
+            foreach ($_SESSION['carrinho'] as $produto) {
+                $numeroItensCarrinho += $produto['quantidade'];
+            }
+        }
+    ?>
     <header>
         <nav class="menu-navegacao">
             <a href="/Adega-Hub" class="logo">
@@ -20,12 +33,19 @@
                 <li><a href="/Adega-Hub/assets/contato">Contato</a></li>
             </ul>
             <ul class="menu-icons">
-                    <li><a href="#" class="selecionado"><i class="bi bi-search"></i></a></li>
-                    <li><a href="#"><i class="bi bi-heart"></i></a></li>
-                    <li><a href="/Adega-Hub/assets/carrinho"><i class="bi bi-cart3"></i></a></li>
-                    <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
-                </ul>
+                <li><a href="#" class="selecionado"><i class="bi bi-search"></i></a></li>
+                <li><a href="#"><i class="bi bi-heart"></i></a></li>
+                <li>
+                    <a href="/Adega-Hub/assets/carrinho" class="position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute translate-middle badge rounded-circle bg-danger text-white p-1" id="contador-carrinho">
+                            <?php
+                            echo $numeroItensCarrinho;
+                            ?>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+            </ul>
         </nav>
     </header>
-
-    

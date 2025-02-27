@@ -1,0 +1,14 @@
+{
+  "name": "adega-hub",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de apis com node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "João Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
