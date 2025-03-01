@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../php/header.php";
+include "../../includes/header.php";
 ?>
 
 <div class="carrinho container mt-5">
@@ -22,11 +22,11 @@ include "../php/header.php";
                             <p class="card-text">Preço Unitário: R$ <?php echo number_format($item['preco'], 2, ',', '.'); ?></p>
                             <p class="card-text">Total: R$ <?php echo number_format($totalProduto, 2, ',', '.'); ?></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="/Adega-Hub/assets/produtos" class="btn btn-primary btn-sm">Continuar Comprando</a>
-                                <form action="/Adega-Hub/assets/carrinho/rmvCarrinho.php" method="POST">
+                                <a href="/Adega-Hub/assets/src/produtos" class="btn btn-primary btn-sm">Continuar Comprando</a>
+                                <form action="/Adega-Hub/assets/src/carrinho/rmvCarrinho.php" method="POST">
                                     <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
                                     <button type="submit" class="btn btn-danger btn-sm">Remover</button>
-                                </form>
+                                </form>0
                             </div>
                         </div>
                     </div>
@@ -41,11 +41,11 @@ include "../php/header.php";
     <?php } else { ?>
         <p class="text-center">Seu carrinho está vazio.</p>
         <div class="text-center">
-            <a href="/Adega-Hub/assets/produtos" class="btn btn-outline-primary">Voltar para os produtos</a>
+            <a href="/Adega-Hub/assets/src/produtos" class="btn btn-outline-primary">Voltar para os produtos</a>
         </div>
     <?php } ?>
 </div>
 
 <?php
-include "../php/footer.php";
+include "../../includes/footer.php";
 ?>

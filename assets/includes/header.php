@@ -29,14 +29,14 @@
             </a>
             <ul class="menu">
                 <li><a href="/Adega-Hub/">Início</a></li>
-                <li><a href="/Adega-Hub/assets/produtos">Produtos</a></li>
-                <li><a href="/Adega-Hub/assets/contato">Contato</a></li>
+                <li><a href="/Adega-Hub/assets/src/produtos">Produtos</a></li>
+                <li><a href="/Adega-Hub/assets/src/contato">Contato</a></li>
             </ul>
             <ul class="menu-icons">
                 <li><a href="#" class="selecionado"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
                 <li>
-                    <a href="/Adega-Hub/assets/carrinho" class="position-relative">
+                    <a href="/Adega-Hub/assets/src/carrinho" class="position-relative">
                         <i class="bi bi-cart3"></i>
                         <span class="position-absolute translate-middle badge rounded-circle bg-danger text-white p-1" id="contador-carrinho">
                             <?php

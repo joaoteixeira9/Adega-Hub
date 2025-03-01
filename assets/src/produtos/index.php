@@ -1,6 +1,6 @@
 <?php 
-    include "../php/header.php";
-    include "../php/conexao.php"; 
+    include "../../includes/header.php";
+    include "../../config/conexao.php"; 
 ?>
 
 <div class="caixaProdutos d-flex justify-content-center text-center">
@@ -19,20 +19,19 @@
                     echo "</div>";
 
                     // Adiciona um formulário para enviar o ID do produto
-                    echo "<form action='./addCarrinho.php' method='post'>";
+                    echo "<form action='../carrinho/addCarrinho.php' method='post'>";
                         echo "<input type='hidden' name='id' value='{$l['id']}'>";
                         echo "<input type='hidden' name='nome' value='{$l['nome']}'>";
                         echo "<input type='hidden' name='preco' value='" . str_replace(',', '.', $l['preco_formatado']) . "'>";
-                        echo "<div class='btn-container'><button type='submit' class='botao-carrinho btn btn-outline-success'>Adicionar ao Carrinho</button></div>";
+                        echo "<div class='btn-container'><button type='submit' class='botao-carrinho btn btn-success'>Adicionar ao Carrinho</button></div>";
                     echo "</form>";
                 echo "</li>";
             }
         echo "</ol>";
 
-        // Fecha a conexão com o banco
         mysqli_close($conexao);
         ?>
     </section>
 </div>
 
-<?php include "../php/footer.php"; ?>
+<?php include "../../includes/footer.php"; ?>

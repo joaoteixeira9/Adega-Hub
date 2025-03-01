@@ -21,10 +21,10 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['preco'])) {
         ];
     }
 
-    header("Location: /Adega-hub/assets/produtos");
+    header("Location: /Adega-hub/assets/src/produtos");
     exit();
 } else {
-    header("Location: /Adega-hub/assets/produtos");
+    header("Location: /Adega-hub/assets/src/produtos");
     exit();
 }
 ?>

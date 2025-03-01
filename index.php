@@ -1,7 +1,7 @@
 <?php 
-    include "./assets/php/conexao.php"; 
-    include "./assets/php/header.php";
-    include "./assets/php/conteudoPrincipal.php";
-    include "./assets/php/layoutBebidas.php";
-    include "./assets/php/footer.php";
+    include "./assets/config/conexao.php"; 
+    include "./assets/includes/header.php";
+    include "./assets/layouts/conteudoPrincipal.php";
+    include "./assets/layouts/layoutBebidas.php";
+    include "./assets/includes/footer.php";
 ?>

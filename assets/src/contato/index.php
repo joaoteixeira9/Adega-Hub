@@ -1,4 +1,4 @@
-<?php include "../php/header.php" ?>
+<?php include "../../includes/header.php" ?>
 
 <section class="contato">
     <div class="localizacao w-100">
@@ -34,4 +34,4 @@
     </div>
 </section>
 
-<?php include "../php/footer.php" ?>
+<?php include "../../includes/footer.php" ?>

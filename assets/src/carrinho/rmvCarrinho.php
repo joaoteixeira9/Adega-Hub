@@ -12,10 +12,10 @@ if (isset($_POST['id'])) {
         }
     }
 
-    header("Location: /Adega-hub/assets/carrinho");
+    header("Location: /Adega-hub/assets/src/carrinho");
     exit();
 } else {
-    header("Location: /Adega-hub/assets/carrinho");
+    header("Location: /Adega-hub/assets/src/carrinho");
     exit();
 }
 ?>
