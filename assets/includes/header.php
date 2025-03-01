@@ -22,7 +22,7 @@
             }
         }
     ?>
-    <header>
+    <header class="">
         <nav class="menu-navegacao">
             <a href="/Adega-Hub" class="logo">
                 <p>Adega Hub</p>

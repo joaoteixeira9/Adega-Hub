@@ -36,7 +36,7 @@ include "../../includes/header.php";
 
         <div class="d-flex justify-content-between align-items-center mt-4">
             <h3>Total geral: R$ <?php echo number_format($totalGeral, 2, ',', '.'); ?></h3>
-            <a href="./finalizarCarrinho/" class="btn btn-success btn-ml">Finalizar compra</a>
+            <a href="../finalizarCompras/" class="btn btn-success btn-ml">Finalizar compra</a>
         </div>
     <?php } else { ?>
         <p class="text-center">Seu carrinho está vazio.</p>
